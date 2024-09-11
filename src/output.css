@@ -705,10 +705,6 @@ video {
   padding-bottom: 8rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .font-bebas {
   font-family: Bebas Neue, sans-serif;
@@ -730,10 +726,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .font-bold {
@@ -792,11 +784,6 @@ video {
   line-height: 110%;
 }
 
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(247 247 247 / var(--tw-text-opacity));
-}
-
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(40 40 40 / var(--tw-text-opacity));
@@ -811,12 +798,6 @@ video {
   outline-color: #0147FF;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto Flex", system-ui;
-}
 
 body {
   line-height: inherit;
