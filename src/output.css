@@ -596,24 +596,60 @@ video {
   position: relative;
 }
 
-.right-24 {
-  right: 6rem;
-}
-
-.top-0 {
-  top: 0px;
+.-bottom-10 {
+  bottom: -2.5rem;
 }
 
 .right-0 {
   right: 0px;
 }
 
-.top-4 {
-  top: 1rem;
+.right-24 {
+  right: 6rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.top-1 {
+  top: 0.25rem;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
+.-top-\[17\%\] {
+  top: -17%;
+}
+
+.-top-\[10\%\] {
+  top: -10%;
+}
+
+.-top-\[8\%\] {
+  top: -8%;
+}
+
+.-top-\[7\%\] {
+  top: -7%;
+}
+
+.-top-\[11\%\] {
+  top: -11%;
+}
+
+.-top-\[13\%\] {
+  top: -13%;
+}
+
+.-bottom-\[20\%\] {
+  bottom: -20%;
+}
+
+.-bottom-\[22\%\] {
+  bottom: -22%;
+}
+
+.-bottom-\[19\%\] {
+  bottom: -19%;
 }
 
 .z-0 {
@@ -622,6 +658,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -639,6 +679,10 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.scroll-pt-20 {
+  scroll-padding-top: 5rem;
 }
 
 .grid-cols-1 {
@@ -700,6 +744,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-3 {
