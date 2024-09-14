@@ -8,6 +8,7 @@ module.exports = {
         'primary': '#282828',
         'secondary': '#F7F7F7',
         'outline': '#0147FF',
+        'white': '#FFFFFF',
       },
       fontFamily: {
         'robotoF': ['Roboto Flex', 'sans-serif'],

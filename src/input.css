@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --bullet-active-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #0147FF;
+}
+
+@property --bullet-inactive-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F1F1F1;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,4 +29,23 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+.item {
+    width: 600px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: grab;
+}
+
+.slider-bullet {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--bullet-inactive-color);
+}
+
+.bullet-active {
+    background-color: var(--bullet-active-color);
 }
