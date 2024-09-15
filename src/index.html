@@ -12,7 +12,10 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="output.css" />
+
+    <script src="./JS/imageSlider.js" defer></script>
   </head>
   <body class="bg-secondary">
     <!-- HEADER SECTION -->
@@ -36,7 +39,9 @@
           class="bg-outline text-secondary font-semibold px-6 py-3 rounded-lg"
           >Zadzwoń do nas</a
         >
+        
       </div>
+      
     </header>
 
     <main>
@@ -115,45 +120,35 @@
           >
             <a
               href=""
+              id='personnal-car'
               class="text-outline underline underline-offset-4 font-semibold"
               >Samochody osobowe</a
             >
-            <a href="">Samochody dostawcze</a>
+            <a href="" id="business-car">Samochody dostawcze</a>
           </div>
 
           <!-- Gallery Block -->
 
-          <div class="pt-20">
-            <div class="slider flex gap-16 w-dvw">
-              <div class="item">
-                <img src="./img/car1.png" alt="Zdjécie samochodu 1" srcset="" />
-              </div>
-              <div class="item">
-                <img src="./img/car2.png" alt="Zdjécie samochodu 2" srcset="" />
-              </div>
-              <div class="item">
-                <img src="./img/car3.png" alt="Zdjécie samochodu 3" srcset="" />
-              </div>
-              <div class="item">
-                <img src="./img/car1.png" alt="Zdjécie samochodu 4" srcset="" />
-              </div>
-              <div class="item">
-                <img src="./img/car1.png" alt="Zdjécie samochodu 5" srcset="" />
-              </div>
-            </div>
-            <div class="flex justify-center items-center pt-[64px]">
-              <div class="flex justify-between w-[80px] h-[8px]">
-                <span class="slider-bullet bullet-active"></span>
-                <span class="slider-bullet"></span>
-                <span class="slider-bullet"></span>
-                <span class="slider-bullet"></span>
-                <span class="slider-bullet"></span>
-              </div>
+          <div
+            id="gallery-slider-container"
+            class="swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden overflow-hidden w-full sm:w-full md:w-full pt-20"
+          >
+            <div id="slider-wrapper" class="swiper-wrapper gap-16"></div>
+          </div>
+
+          <div class="flex justify-center items-center pt-[64px]">
+            <div class="flex justify-between w-[80px] h-[8px]">
+              <span class="slider-bullet bullet-active"></span>
+              <span class="slider-bullet"></span>
+              <span class="slider-bullet"></span>
+              <span class="slider-bullet"></span>
+              <span class="slider-bullet"></span>
             </div>
           </div>
+          <div class="swiper-pagination-custom mb-16"></div>
         </div>
       </section>
-      <section class="bg-primary w-dvw h-full">
+      <section class="bg-primary h-full">
         <div
           class="container flex flex-col lg:flex-row justify-between py-[88px] lg:gap-12"
         >
@@ -165,13 +160,13 @@
               nulla commodo.
             </h2>
             <div class="flex flex-col gap-6">
-              <p class="font-robotoCon font-normal text-sm leading-[21px]">
+              <p class="seo-text font-robotoCon font-normal text-sm leading-[21px]">
                 Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
                 Donec egestas, nisl vehicula feugiat ornare, diam turpis
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et
                 [...]
               </p>
-              <button class="flex justify-start">
+              <button class="toggle-btn flex justify-start">
                 <div
                   class="inline-flex items-center border-b-[1.5px] gap-[6px] font-robotoCon text-[14px] leading-[21px] pb-2"
                 >
@@ -200,13 +195,13 @@
               nulla commodo.
             </h2>
             <div class="flex flex-col gap-6">
-              <p class="font-robotoCon font-normal text-sm leading-[21px]">
+              <p class="seo-text font-robotoCon font-normal text-sm leading-[21px]">
                 Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
                 Donec egestas, nisl vehicula feugiat ornare, diam turpis
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et
                 [...]
               </p>
-              <button class="flex justify-start">
+              <button class="toggle-btn flex justify-start">
                 <div
                   class="inline-flex items-center border-b-[1.5px] gap-[6px] font-robotoCon text-[14px] leading-[21px] pb-2"
                 >
@@ -230,11 +225,19 @@
         </div>
       </section>
     </main>
-    <footer class="w-dvw bg-primary border-t-[1px] border-white text-white">
+    <footer class="bg-primary border-t-[1px] border-white text-white">
       <div class="container flex justify-between py-6 px-[120px]">
-        <a href="#CarSpots" class="font-robotoCon font-bold text-base leading-6">Cars Spot</a>
-        <a href="#PolitykaPrywatnosci" class="font-robotoCon font-light text-base leading-6 underline">Polityka prywatności</a>
+        <a href="#CarSpots" class="font-robotoCon font-bold text-base leading-6"
+          >Cars Spot</a
+        >
+        <a
+          href="#PolitykaPrywatnosci`"
+          class="font-robotoCon font-light text-base leading-6 underline"
+          >Polityka prywatności</a
+        >
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./JS/textExpander.js"></script>
   </body>
 </html>
