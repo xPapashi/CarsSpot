@@ -27,8 +27,10 @@ body {
 
 .container {
     width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .item {
