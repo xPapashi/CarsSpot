@@ -3,7 +3,13 @@ module.exports = {
     mode: "jit",
     content: ["./src/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {
+        screens: {
+          '2xl': '1200px',
+          'xl': '1200px',
+          'lg': '1024px',
+        }
+      },
       colors: {
         'primary': '#282828',
         'secondary': '#F7F7F7',
