@@ -2,29 +2,29 @@
 const data = {
   personnal: [
     {
-      src: "./img/car1.png",
+      src: "../public/img/car1.png",
       alt: "Samochód 1",
     },
     {
-      src: "./img/car2.png",
+      src: "../public/img/car2.png",
       alt: "Samochód 2",
     },
     {
-      src: "./img/car3.png",
+      src: "../public/img/car3.png",
       alt: "Samochód 3",
     },
   ],
   business: [
     {
-      src: "./img/van2.png",
+      src: "../public/img/van2.png",
       alt: "Samochód Dostawczy 1",
     },
     {
-      src: "./img/van3.png",
+      src: "../public/img/van3.png",
       alt: "Samochód Dostawczy 2",
     },
     {
-      src: "./img/van1.png",
+      src: "../public/img/van1.png",
       alt: "Samochód Dostawczy 3",
     },
   ],
@@ -37,7 +37,7 @@ function loadGallery(option) {
     data[option].forEach((image) => {
         const slide = document.createElement("div");
         slide.classList.add("swiper-slide");
-        slide.innerHTML = `<img src='${image.src}' alt='${image.alt}' class='object-contain w-full'/>`;
+        slide.innerHTML = `<img src='${image.src}' alt='${image.alt}' class='object-contain w-[600px] cursor-grab'/>`;
         sliderWrapper.appendChild(slide);
     });
 

@@ -2,61 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@property --bullet-active-color {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: #0147FF;
-}
-
-@property --bullet-inactive-color {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: #F1F1F1;
-}
-
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto Flex", system-ui;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Flex", system-ui;
 }
 
 body {
-    line-height: inherit;
+  line-height: inherit;
 }
 
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.slider {
-   position: relative;
-   width: 100%;
-   height: 100%;
-   z-index: 1;
-   display: flex;
-   box-sizing: content-box;
-}
+@layer components {
+  .swiper-pagination-custom {
+    @apply flex justify-center gap-x-2;
+  }
 
-.item {
-    display: inline-flex;
-    width: 600px;
-    flex-shrink: 0;
-    cursor: grab;
-}
+  .swiper-pagination-bullet-custom {
+    @apply w-2 h-2 bg-gray rounded-full;
+  }
 
-.slider-bullet {
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: var(--bullet-inactive-color);
-}
+  .swiper-pagination-bullet-active {
+    @apply bg-outline;
+  }
 
-.bullet-active {
-    background-color: var(--bullet-active-color);
+  .btn-hovered {
+    @apply hover:bg-secondary border border-outline transition ease-in-out hover:text-outline;
+  }
+  .btn-hovered-inverted {
+    @apply hover:bg-outline border border-secondary transition ease-in-out hover:text-white;
+  }
 }
